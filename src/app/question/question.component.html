@@ -1,0 +1,9 @@
+
+<!-- app-question.component.html -->
+
+<h2>{{ question.question }}</h2>
+<ul>
+  <li *ngFor="let option of question.options,let i = index" (click)="onSelectAnswer(option)">
+    {{ toRoman(i + 1) }}.{{ option }}
+  </li>
+</ul>

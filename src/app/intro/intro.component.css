@@ -1,0 +1,39 @@
+h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  button {
+    background-color: rgb(46, 46, 104);
+    color:#f1f1f1;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  .gradient-button {
+    background: linear-gradient(to bottom, #8d448d, #44023b);
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+  }
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+    /* General styles */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #main-container {
+        text-align: center;
+    }
+    /* styles.css */
+
+/* Define the border style for all pages */
+/* styles.css */
+
+/* Define the border style for the entire application content */
+.app-container {
+    border: 1px solid #93a5bd; /* You can customize the border color and width */
+    padding: 20px; /* Optional: Add padding inside the border */
+    margin: 10px;
+    border-radius: 20px; /* Optional: Add rounded corners */
+
+  }
+ 
+  

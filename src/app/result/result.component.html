@@ -1,0 +1,39 @@
+
+
+<h1 style="color:rgb(236, 69, 27)">Your Results</h1>
+<mat-divider></mat-divider>
+
+<div>
+  <!-- Add a container for the Highcharts chart -->
+  <mat-grid-list [cols]="resultGridCols"  gutterSize="20px" rowHeight="100px"    >
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4" >
+      <div [chart]="columnChart1"></div>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4" >
+      <div [chart]="columnChart2"></div>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4" >
+      <div [chart]="columnChart3"></div>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4"  >
+      <div [chart]="columnChart4"></div>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4" >
+      <div [chart]="columnChart5"></div>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4">
+      <div [chart]="columnChart6"></div>
+    </mat-grid-tile>
+    <mat-grid-tile style="background-color:#2f6597; color: #ffffff" [fxFlex.xs]="100" [fxFlex.sm]="90" [fxFlex.md]="85" [fxFlex.gt-md]="34" rowspan="4" >
+      <div align ="center" [chart]="columnChart7"></div>
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+  </div>
+  <!--
+<div style="padding-top: 10px;"*ngFor="let question of questions;  let i = index">
+  <h3>{{ i + 1 }}. {{ question.question }}</h3>
+  <p style="padding-left: 20px;">{{ getExplanation(question.question, userAnswers[question.question]) }}</p>
+</div>
+-->
+<!-- result-component.html -->

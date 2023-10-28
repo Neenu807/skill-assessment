@@ -1,0 +1,21 @@
+
+<!-- app.component.html -->
+<div class="app-container">
+ 
+  <mat-sidenav-container>
+    <mat-sidenav>
+      <button mat-button (click)="onStart()">Start</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div *ngIf="currentPage === 1">
+        <app-intro (startClicked)="moveToPage(2)"></app-intro>
+      </div>
+      <div *ngFor="let question of questions; let i = index" [hidden]="currentPage !== i + 2">
+        <app-question [question]="question" (answerSelected)="userAnswers[question.question] = $event; moveToPage(i + 3)"></app-question>
+      </div>
+      <div *ngIf="currentPage === questions.length + 2">
+        <app-result [questions]="questions" [userAnswers]="userAnswers"></app-result>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
